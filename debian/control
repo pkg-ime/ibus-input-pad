@@ -3,6 +3,7 @@ Section: utils
 Priority: optional
 Maintainer: IME Packaging Team <pkg-ime-devel@lists.alioth.debian.org>
 Uploaders: Asias He <asias.hejun@gmail.com>, LI Daobing <lidaobing@debian.org>
+DM-Upload-Allowed: yes
 Build-Depends:
     autoconf,
     automake,
@@ -17,8 +18,8 @@ Build-Depends:
     debhelper (>= 7.0.50)
 Standards-Version: 3.9.1
 Homepage: http://code.google.com/p/input-pad/
-Vcs-Bzr: lp:~pkg-ime/input-pad/debian-ibus-input-pad
-Vcs-Browser: https://code.launchpad.net/~pkg-ime/input-pad/debian-ibus-input-pad
+Vcs-Git: git://git.debian.org/git/pkg-ime/ibus-input-pad.git
+Vcs-Browser: http://git.debian.org/?p=pkg-ime/ibus-input-pad.git
 
 Package: ibus-input-pad
 Architecture: any
@@ -26,7 +27,7 @@ Depends:
     ${misc:Depends},
     ${shlibs:Depends},
     ibus,
-    libinput-pad0
+    libinput-pad1
 Description: Input Pad for IBus
  The input pad engine for IBus platform.
  It provides the interface to use input-pad with IBus.

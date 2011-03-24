@@ -24,10 +24,7 @@ Vcs-Browser: http://git.debian.org/?p=pkg-ime/ibus-input-pad.git
 Package: ibus-input-pad
 Architecture: any
 Depends:
-    ${misc:Depends},
-    ${shlibs:Depends},
-    ibus,
-    libinput-pad1
+    ${misc:Depends}, ${shlibs:Depends}, ibus
 Description: Input Pad for IBus
  The input pad engine for IBus platform.
  It provides the interface to use input-pad with IBus.

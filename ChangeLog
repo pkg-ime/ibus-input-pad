@@ -1,3 +1,53 @@
+commit babdf267e0b7ba4729a11710a2deeab79730b63a
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-11-30 18:12:48 +0900
+
+    Released 0.1.4
+
+M	configure.ac
+
+commit 49fcd3d7c22667947f9388795582f6e09593613f
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-11-08 14:43:04 +0900
+
+    Fixed focused label.
+
+M	setup/setup-gtk2.ui
+
+commit aed7bb90f1bd9c9d4fe1f3778096522550c94328
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-10-08 16:38:45 +0900
+
+    Fixed typo.
+
+M	Makefile.am
+M	README
+M	configure.ac
+M	engine/Makefile.am
+M	engine/engine.c
+M	engine/engine.h
+M	engine/i18n.h
+M	engine/input-pad.xml.in
+M	engine/main.c
+M	ibus-input-pad.spec.in
+M	po/Makevars
+M	po/fr.po
+M	po/ja.po
+M	setup/Makefile.am
+M	setup/iconfig-gtk2.c
+M	setup/iconfig-gtk2.h
+M	setup/main.c
+M	setup/setup-gtk2.c
+M	setup/setup-gtk2.h
+
+commit ea2efb1b0bfeb9414cc24270530db405afe2da5c
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-07-26 13:08:02 +0900
+
+    Removed workaround.
+
+M	debian/rules
+
 commit 8fe08316ec52ef562443353f56a7f0fc45baff76
 Author: fujiwarat <takao.fujiwara1@gmail.com>
 Date:   2010-07-26 11:45:46 +0900

@@ -1,3 +1,13 @@
+ibus-input-pad (1.4.0-1) unstable; urgency=low
+
+  * New upstream release
+  * Drop debian/ibus-input-pad.install since it is a single binary
+    pacakge.
+  * Bump Standard-Version to 3.9.2
+  * Simplify debian/rules
+
+ -- Asias He <asias.hejun@gmail.com>  Sun, 24 Jul 2011 19:06:35 +0800
+
 ibus-input-pad (0.1.4-1) unstable; urgency=low
 
   * Set Vcs to git.debian.org

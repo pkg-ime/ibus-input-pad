@@ -21,9 +21,9 @@
 
 dnl - if not 1, append datestamp to the version number.
 m4_define([ibus_released], [1])
-m4_define([ibus_major_version], [0])
-m4_define([ibus_minor_version], [1])
-m4_define([ibus_micro_version], [4])
+m4_define([ibus_major_version], [1])
+m4_define([ibus_minor_version], [4])
+m4_define([ibus_micro_version], [0])
 m4_define(ibus_maybe_datestamp,
     m4_esyscmd([if test x]ibus_released[ != x1; then date +.%Y%m%d | tr -d '\n\r'; fi]))
 
@@ -66,9 +66,33 @@ PKG_CHECK_MODULES(GLIB2, [
     glib-2.0 >= 2.8
 ])
 
-PKG_CHECK_MODULES(GTK2, [
-    gtk+-2.0
-])
+dnl - check gtk
+AC_ARG_WITH([gtk],
+    [AS_HELP_STRING([--with-gtk=2.0|3.0],
+                    [Select GTK+ version. The default is 2.0])],
+    [case "$with_gtk" in
+        2.0|3.0) ;;
+        *) AC_MSG_ERROR([invalid gtk version specified]) ;;
+     esac],
+    [with_gtk=2.0]
+)
+
+case "$with_gtk" in
+    2.0)
+        PKG_CHECK_MODULES(GTK2, [
+            gtk+-2.0
+        ])
+        AM_CONDITIONAL(HAVE_GTK3, false)
+        AM_CONDITIONAL(HAVE_GTK2, true)
+        ;;
+    3.0)
+        PKG_CHECK_MODULES(GTK3, [
+            gtk+-3.0
+        ])
+        AM_CONDITIONAL(HAVE_GTK3, true)
+        AM_CONDITIONAL(HAVE_GTK2, false)
+        ;;
+esac
 
 m4_define([ibus_pc_name], [ibus-1.0])
 PKG_CHECK_MODULES(IBUS,
@@ -100,3 +124,10 @@ setup/Makefile
 ])
 
 AC_OUTPUT
+echo "
+                ibus-input-pad version ibus_version
+
+
+libinput_pad version:    $libinput_pad_VERSION
+GTK+ version:            $with_gtk
+"

@@ -1,10 +1,37 @@
-commit babdf267e0b7ba4729a11710a2deeab79730b63a
+commit c2bec278b43a888a9c496e0ad6c125275d2a19ee
 Author: fujiwarat <takao.fujiwara1@gmail.com>
-Date:   2010-11-30 18:12:48 +0900
+Date:   2010-12-03 15:27:18 +0900
 
-    Released 0.1.4
+    Released 1.4.0
+
+M	README
+M	configure.ac
+
+commit d447097f46e71bae95136c4254b397b553d4c8ec
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-12-03 15:27:14 +0900
+
+    Changed GTK+ configure option.
 
 M	configure.ac
+
+commit 4dcc13b93296673ec80a3cb6c3e1dd826fca8f7b
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-11-09 17:51:50 +0900
+
+    Supported GTK3.
+
+M	configure.ac
+M	setup/Makefile.am
+M	setup/setup-gtk2.c
+
+commit 647815dcc289e788628b5a333f5869520f97ef08
+Author: fujiwarat <takao.fujiwara1@gmail.com>
+Date:   2010-11-08 15:03:59 +0900
+
+    Integrated gdbus for IBus 1.4
+
+M	setup/iconfig-gtk2.c
 
 commit 49fcd3d7c22667947f9388795582f6e09593613f
 Author: fujiwarat <takao.fujiwara1@gmail.com>

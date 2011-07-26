@@ -5,17 +5,17 @@ Maintainer: IME Packaging Team <pkg-ime-devel@lists.alioth.debian.org>
 Uploaders: Asias He <asias.hejun@gmail.com>, LI Daobing <lidaobing@debian.org>
 DM-Upload-Allowed: yes
 Build-Depends:
-    autoconf,
-    automake,
-    autotools-dev,
-    intltool (>= 0.40.0),
-    libgtk2.0-dev,
-    libibus-dev,
-    libinput-pad-dev (>= 1.0.0),
-    libxkbfile-dev,
-    libxklavier-dev (>= 4.0),
-    libxml2-dev (>= 2.0),
-    debhelper (>= 7.0.50)
+ autoconf,
+ automake,
+ autotools-dev,
+ intltool (>= 0.40.0),
+ libgtk2.0-dev,
+ libibus-1.0-dev,
+ libinput-pad-dev (>= 1.0.0),
+ libxkbfile-dev,
+ libxklavier-dev (>= 4.0),
+ libxml2-dev (>= 2.0),
+ debhelper (>= 7.0.50)
 Standards-Version: 3.9.2
 Homepage: http://code.google.com/p/input-pad/
 Vcs-Git: git://git.debian.org/git/pkg-ime/ibus-input-pad.git

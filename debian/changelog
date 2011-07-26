@@ -1,3 +1,9 @@
+ibus-input-pad (1.4.0-2) unstable; urgency=low
+
+  * Build-Depends on libibus-1.0-dev instead of libibus-dev
+
+ -- Asias He <asias.hejun@gmail.com>  Tue, 26 Jul 2011 10:11:13 +0800
+
 ibus-input-pad (1.4.0-1) unstable; urgency=low
 
   * New upstream release
